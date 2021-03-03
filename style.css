@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to left , cadetblue ,coral );
+}
+
+.opacity{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    /* filter: blur(2px); */
+    border-radius: 30px;
+    -webkit-box-shadow: 1px 4px 129px 17px rgba(252,42,77,1);
+-moz-box-shadow: 1px 4px 129px 17px rgba(252,42,77,1);
+box-shadow: 1px 4px 129px 17px rgba(252,42,77,1);
+}
+
+.musicDiv{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    
+}
+.plate{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 1;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-top: 30px;
+    transition:all 1s;
+
+}
+
+@keyframes circle{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+.circle{
+    height: 150px;
+    transform: scale(1);
+}
+.music{
+    position: absolute;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    bottom: 0;
+    background-color:white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
